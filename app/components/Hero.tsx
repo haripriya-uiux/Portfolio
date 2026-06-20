@@ -46,9 +46,11 @@ export default function Hero() {
           <div className="relative border-[6px] border-[#222222] overflow-hidden w-[90%] md:w-[80%] lg:w-full max-w-[420px] aspect-[4/5] bg-neutral-100 flex flex-col justify-end shadow-sm">
             {/* Profile Image */}
             <Image
-              src="/profile.png"
+              src="/hero_img.webp"
               alt="Haripriya working on a laptop"
               fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 420px"
               className="object-cover grayscale"
             />
             {/* Overlay bottom card */}

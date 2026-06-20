@@ -27,8 +27,50 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Haripriya | UI/UX Designer & Product Thinker",
-  description: "UI/UX Designer with 2+ Years of industry experience. Designing seamless digital experiences with a user-first mindset.",
+  title: "Haripriya | Product Designer & UI/UX Architect — Crafting Sleek, High-Impact Digital Products",
+  description: "Portfolio of Haripriya, a Product Designer & UI/UX Architect with 2+ years of experience designing empathy-driven, pixel-perfect interfaces for Healthcare & Logistics industries.",
+  keywords: [
+    "UI UX Designer",
+    "Product Designer",
+    "UX Architect",
+    "UI Design Portfolio",
+    "Product Design Portfolio",
+    "Figma Specialist",
+    "Healthcare App Design",
+    "Logistics UI Design",
+    "Interaction Designer",
+    "Web Application Designer",
+    "Mobile Design Case Studies"
+  ],
+  authors: [{ name: "Haripriya" }],
+  creator: "Haripriya",
+  openGraph: {
+    title: "Haripriya | Product Designer & UI/UX Architect",
+    description: "Designing sleek, human-centered digital products for healthcare and logistics.",
+    url: "https://haripriya.design",
+    siteName: "Haripriya Portfolio",
+    images: [
+      {
+        url: "/hero_img.webp",
+        width: 800,
+        height: 1000,
+        alt: "Haripriya - Product Designer & UI/UX Architect"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Haripriya | Product Designer & UI/UX Architect",
+    description: "Designing sleek, human-centered digital products.",
+    images: ["/hero_img.webp"]
+  },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png"
+  }
 };
 
 export default function RootLayout({

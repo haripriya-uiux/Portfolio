@@ -2,8 +2,19 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Image from "next/image";
+import { Metadata } from "next";
 
-export default function ProjectDetail({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const formattedTitle = slug.replace(/-/g, " ").toUpperCase();
+  return {
+    title: `${formattedTitle} | Design Case Study — Haripriya`,
+    description: `Deep dive into the design journey, user experience architecture, and visual system of the ${formattedTitle} project, designed by Haripriya.`,
+  };
+}
+
+export default async function ProjectDetail({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   // Rendering the TRANSTAN detail page based on the design
   return (
     <div className="min-h-screen bg-[#FAFAFA] text-black">
@@ -41,7 +52,14 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
       {/* Giant Hero Image */}
       <section className="px-6 max-w-7xl mx-auto mb-20">
         <div className="relative aspect-[16/9] w-full bg-[#D3DEE0] flex items-center justify-center overflow-hidden">
-          <Image src={`/${params.slug}_project.png`} alt="Project Details" fill className="object-cover z-10" />
+          <Image
+            src={`/${slug}_project.png`}
+            alt="Project Details"
+            fill
+            priority
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            className="object-cover z-10"
+          />
         </div>
       </section>
 
