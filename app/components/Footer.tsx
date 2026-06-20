@@ -31,9 +31,15 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="/Haripriya_A_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download="Haripriya_A_Resume.pdf"
+                    className="hover:text-white transition-colors"
+                  >
                     Resume
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link href="/contact" className="hover:text-white transition-colors">

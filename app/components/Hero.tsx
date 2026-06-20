@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import DownloadResumeButton from "./DownloadResumeButton";
 
 export default function Hero() {
   return (
@@ -32,12 +33,7 @@ export default function Hero() {
             >
               view my work
             </Link>
-            <Link
-              href="/contact"
-              className="font-plus-jakarta font-[600] text-[14px] tracking-[0.05em] uppercase flex items-center justify-center w-[220px] h-[54px] bg-transparent text-black border-[1.5px] border-[#D1D1D1] hover:border-black transition-colors"
-            >
-              download resume
-            </Link>
+            <DownloadResumeButton variant="hero" />
           </div>
         </div>
 

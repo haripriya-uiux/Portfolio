@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { BriefcaseIcon, ToolIcon, QuestionIcon } from "../components/Icons";
 import { Metadata } from "next";
+import DownloadResumeButton from "../components/DownloadResumeButton";
 
 export const metadata: Metadata = {
   title: "About Haripriya — Product Designer & UI/UX Architect",
@@ -27,10 +28,7 @@ export default function AboutPage() {
               About Me
             </h1>
           </div>
-          <a
-            href="#"
-            className="bg-black text-white px-15 py-2.5 font-plus-jakarta  text-[14px] font-semibold uppercase tracking-widest flex items-center gap-2 hover:opacity-80 transition-opacity"
-          >
+          <DownloadResumeButton variant="about">
             <svg
               width="18"
               height="18"
@@ -46,7 +44,7 @@ export default function AboutPage() {
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
             Download Full Resume
-          </a>
+          </DownloadResumeButton>
         </div>
         <div className="mb-3">
           {/* Hero Grid */}
