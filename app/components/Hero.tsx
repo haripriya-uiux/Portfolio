@@ -10,26 +10,26 @@ export default function Hero() {
         
         {/* Left Column: Hero Content */}
         <div className="lg:col-span-7 flex flex-col items-start text-left">
-          <div className="font-plus-jakarta text-[14px] font-[600] text-[#E34330] tracking-[0.05em] leading-none uppercase">
+          <div className="font-plus-jakarta text-[12px] sm:text-[14px] font-[600] text-[#E34330] tracking-[0.05em] leading-none uppercase">
             ui/ux designer & product thinker
           </div>
           
-          <h1 className="font-syne text-[66px] font-[800] leading-none tracking-normal text-black">
+          <h1 className="font-syne text-[38px] sm:text-[54px] md:text-[66px] font-[800] leading-[1.1] md:leading-none tracking-normal text-black mt-4">
             I design<br />
-            <span className="font-playfair font-[500] italic text-[66px] leading-none tracking-normal text-[#E34330]">digital</span><br />
+            <span className="font-playfair font-[500] italic text-[38px] sm:text-[54px] md:text-[66px] leading-[1.1] md:leading-none tracking-normal text-[#E34330]">digital</span><br />
             experiences<br />
             that<br />
             connect.
           </h1>
 
-          <p className="font-plus-jakarta text-[20px] font-[400] text-[#8C8C8C] max-w-[500px] mt-8.5">
+          <p className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-[400] text-[#8C8C8C] max-w-[500px] mt-6 sm:mt-8.5">
             UI/UX Designer with 2+ Years of industry experience. <br/> Designing seamless digital experiences with a user-first mindset.
           </p>
 
-          <div className="flex flex-row gap-8.5  mt-8.5">
+          <div className="flex flex-col sm:flex-row gap-4 xs:gap-6 mt-8.5 w-full xs:w-auto">
             <Link
               href="/#projects"
-              className="font-plus-jakarta font-[600] text-[14px]  tracking-[0.05em] uppercase flex items-center justify-center w-[220px] h-[54px] bg-black text-white border-[1.5px] border-black hover:bg-neutral-800 transition-colors"
+              className="font-plus-jakarta font-[600] text-[14px] tracking-[0.05em] uppercase flex items-center justify-center w-full xs:w-[220px] h-[54px] bg-black text-white border-[1.5px] border-black hover:bg-neutral-800 transition-colors"
             >
               view my work
             </Link>

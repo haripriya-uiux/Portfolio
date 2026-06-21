@@ -137,18 +137,18 @@ export default function Projects() {
 
               {/* Text Container */}
               <div className="flex flex-col px-1">
-                <div className="flex items-center justify-between w-full">
-                  <div className="flex items-center gap-x-4.5">
-                    <span className="font-playfair text-[#E34330] text-[20px] font-medium italic">{project.id}</span>
-                    <h3 className="font-syne text-[26px] font-bold text-black uppercase tracking-widest">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-2">
+                  <div className="flex items-center gap-x-3 md:gap-x-4.5">
+                    <span className="font-playfair text-[#E34330] text-[16px] md:text-[20px] font-medium italic">{project.id}</span>
+                    <h3 className="font-syne text-[20px] md:text-[26px] font-bold text-black uppercase tracking-widest">
                       {project.title}
                     </h3>
                   </div>
-                  <span className="font-roboto text-[16px] font-bold text-black uppercase tracking-widest">
+                  <span className="font-roboto text-[13px] md:text-[16px] font-bold text-black uppercase tracking-widest sm:ml-auto">
                     {project.tag}
                   </span>
                 </div>
-                <p className="font-roboto text-[14px] font-medium text-[#8C8C8C] mt-1.5 ml-10">{project.subtitle}</p>
+                <p className="font-roboto text-[14px] font-medium text-[#8C8C8C] mt-1.5 ml-6 md:ml-10">{project.subtitle}</p>
               </div>
             </div>
           ))}

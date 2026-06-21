@@ -73,10 +73,10 @@ export default function DownloadResumeButton({ variant = "hero", className, chil
   };
 
   const defaultHeroClass =
-    "font-plus-jakarta font-[600] text-[14px] tracking-[0.05em] uppercase flex items-center justify-center w-[220px] h-[54px] bg-transparent text-black border-[1.5px] border-[#D1D1D1] hover:border-black transition-colors cursor-pointer relative overflow-visible isolate";
+    "font-plus-jakarta font-[600] text-[14px] tracking-[0.05em] uppercase flex items-center justify-center w-full xs:w-[220px] h-[54px] bg-transparent text-black border-[1.5px] border-[#D1D1D1] hover:border-black transition-colors cursor-pointer relative overflow-visible isolate";
 
   const defaultAboutClass =
-    "bg-black text-white px-15 py-2.5 font-plus-jakarta text-[14px] font-semibold uppercase tracking-widest flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer relative overflow-visible isolate";
+    "bg-black text-white px-6 md:px-15 py-2.5 font-plus-jakarta text-[14px] font-semibold uppercase tracking-widest flex items-center justify-center gap-2 hover:opacity-80 transition-opacity cursor-pointer relative overflow-visible isolate w-full sm:w-auto";
 
   const resolvedClass = className || (variant === "hero" ? defaultHeroClass : defaultAboutClass);
 

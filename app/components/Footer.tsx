@@ -54,7 +54,7 @@ export default function Footer() {
               <h3 className="font-syne text-[20px] font-bold uppercase tracking-widest">SAY HELLO</h3>
               <ul className="flex flex-col space-y-5 font-plus-jakarta text-[16px] font-normal text-[#C2C2C2]">
                 <li>
-                  <a href="mailto:haripriya.uiux@gmail.com" className="hover:text-white transition-colors">
+                  <a href="mailto:haripriya.uiux@gmail.com" className="hover:text-white transition-colors break-all">
                     haripriya.uiux@gmail.com
                   </a>
                 </li>

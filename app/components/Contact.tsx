@@ -86,19 +86,19 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="pt-20 pb-30 bg-[#FAFAFA] border-t border-[#E5E5E5]">
+    <section id="contact" className="py-12 md:py-20 lg:py-30 bg-[#FAFAFA] border-t border-[#E5E5E5]">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}
         <div className="flex flex-col space-y-2 border-b border-[#D8D8D8] pb-6 mb-10">
-          <div className="font-plus-jakarta text-[14px] font-semibold text-[#E34330] uppercase tracking-widest">
+          <div className="font-plus-jakarta text-[12px] sm:text-[14px] font-semibold text-[#E34330] uppercase tracking-widest">
             GET IN TOUCH
           </div>
-          <h2 className="font-syne text-[32px] font-bold text-black uppercase tracking-widest leading-none">
+          <h2 className="font-syne text-[24px] sm:text-[32px] font-bold text-black uppercase tracking-widest leading-none">
             LET'S START A CONVERSATION
           </h2>
         </div>
 
-        <p className="font-plus-jakarta text-[20px] font-medium text-[#6F6F6F] mb-6">
+        <p className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-medium text-[#6F6F6F] mb-6">
           Reach out via any channel below.
         </p>
 
@@ -120,11 +120,11 @@ export default function Contact() {
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
               </div>
-              <div className="flex flex-col space-y-3">
+              <div className="flex flex-col space-y-3 min-w-0">
                 <span className="font-roboto text-[14px] font-bold text-[#6F6F6F] uppercase tracking-widest">
                   PHONE
                 </span>
-                <a href="tel:+919790900531" className="font-plus-jakarta text-[20px] font-bold text-black">
+                <a href="tel:+919790900531" className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-bold text-black break-all">
                   +91 9790900531
                 </a>
               </div>
@@ -146,14 +146,14 @@ export default function Contact() {
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
               </div>
-              <div className="flex flex-col space-y-3">
+              <div className="flex flex-col space-y-3 min-w-0">
                 <span className="font-roboto text-[14px] font-bold text-[#6F6F6F] uppercase tracking-widest">
                   EMAIL ME
                 </span>
                 <a
                   href="mailto:haripriya.uiux@gmail.com"
                   target="_blank"
-                  className="font-plus-jakarta text-[20px] font-bold text-black"
+                  className="font-plus-jakarta text-[15px] sm:text-[18px] md:text-[20px] font-bold text-black break-all"
                 >
                   haripriya.uiux@gmail.com
                 </a>
@@ -177,14 +177,14 @@ export default function Contact() {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </div>
-              <div className="flex flex-col space-y-3">
+              <div className="flex flex-col space-y-3 min-w-0">
                 <span className="font-roboto text-[14px] font-bold text-[#6F6F6F] uppercase tracking-widest">
                   LINKEDIN
                 </span>
                 <a
                   target="_blank"
                   href="https://linkedin.com/in/haripriyauiuxdesigner"
-                  className="font-plus-jakarta text-[20px] font-bold text-black hover:underline underline-offset-4"
+                  className="font-plus-jakarta text-[13px] sm:text-[16px] md:text-[20px] font-bold text-black hover:underline underline-offset-4 break-all"
                 >
                   https://linkedin.com/in/haripriyauiuxdesigner
                 </a>
@@ -192,7 +192,7 @@ export default function Contact() {
             </div>
           </div>
           {/* Right Side: Contact Form */}
-          <div className="border border-[#D8D8D8] bg-transparent p-8 md:p-10 flex flex-col justify-center min-h-[450px]">
+          <div className="border border-[#D8D8D8] bg-transparent p-5 sm:p-8 md:p-10 flex flex-col justify-center min-h-[450px]">
             {status === "success" ? (
               <div className="flex flex-col items-center justify-center text-center animate-fade-in py-8">
                 <style>{`
@@ -230,11 +230,11 @@ export default function Contact() {
                   </svg>
                 </div>
 
-                <h3 className="font-syne text-[26px] font-bold text-black uppercase tracking-widest mb-4">
+                <h3 className="font-syne text-[22px] sm:text-[26px] font-bold text-black uppercase tracking-widest mb-4">
                   MESSAGE SENT!
                 </h3>
                 
-                <p className="font-plus-jakarta text-[16px] font-medium text-[#6F6F6F] max-w-[400px] mb-8 leading-relaxed">
+                <p className="font-plus-jakarta text-[14px] sm:text-[16px] font-medium text-[#6F6F6F] max-w-[400px] mb-8 leading-relaxed">
                   Thank you for reaching out. Your message has been safely validated and sent. I'll get back to you shortly!
                 </p>
 
@@ -247,7 +247,7 @@ export default function Contact() {
               </div>
             ) : (
               <>
-                <h3 className="font-plus-jakarta text-[20px] font-bold text-black uppercase tracking-widest mb-7">
+                <h3 className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-bold text-black uppercase tracking-widest mb-7">
                   LEAVE A MESSAGE
                 </h3>
 

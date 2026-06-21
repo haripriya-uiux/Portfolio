@@ -19,9 +19,9 @@ export default function AboutPage() {
 
       <main className="max-w-7xl mx-auto px-6 py-16">
         {/* Header section */}
-        <div className="flex justify-between items-end border-b border-[#E5E5E5] pb-6 mb-10">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-6 border-b border-[#E5E5E5] pb-6 mb-10">
           <div>
-            <div className="font-plus-jakarta text-[14px] font-semibold text-[#E34330] tracking-widest uppercase mb-2">
+            <div className="font-plus-jakarta text-[12px] sm:text-[14px] font-semibold text-[#E34330] tracking-widest uppercase mb-2">
               Resume
             </div>
             <h1 className="font-syne text-[22px] md:text-[32px] font-bold uppercase tracking-widest leading-none">
@@ -70,17 +70,17 @@ export default function AboutPage() {
 
             {/* Right Column: Bio & Stats */}
             <div className="lg:col-span-8 flex flex-col">
-              <h3 className="font-plus-jakarta text-[18px] md:text-[20px] font-semibold text-black leading-[30px] mb-6">
+              <h3 className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-semibold text-black leading-relaxed mb-6">
                 Hello, I am Haripriya. Over the past 2+ years, I've designed User Interface for Web Application, Mobile
                 Application and POC Devices in Healthcare and Logistics Industry
               </h3>
-              <p className="font-plus-jakarta text-[20px] font-medium text-[#6F6F6F] leading-[30px] mb-6">
+              <p className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-medium text-[#6F6F6F] leading-relaxed mb-6">
                 My background combines academic training in Multimedia and UI Design and Development, giving me a rare
                 perspective that balances visual aesthetic elegance with deep, empathy-driven behavioural analysis. I
                 believe that products should be highly functional before being beautiful, but true luxury is achieved
                 when they are both.
               </p>
-              <p className="font-plus-jakarta text-[20px] font-medium text-[#6F6F6F] leading-[30px] mb-6">
+              <p className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-medium text-[#6F6F6F] leading-relaxed mb-6">
                 I operate with extreme structural clarity. Whether it's laying down pixel-perfect vertical grid columns,
                 mapping complex user pathways in user flows, building custom physical component modules in Figma, or
                 structuring adaptive layouts in design, I treat developer handoff and technical feasibility as core
@@ -125,44 +125,44 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-15">
-            <div className="flex flex-col md:flex-row md:items-start justify-between">
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-2 md:gap-4">
               <div>
-                <h3 className="font-syne text-[24px] font-bold text-black uppercase tracking-widest mb-4">
+                <h3 className="font-syne text-[18px] sm:text-[22px] md:text-[24px] font-bold text-black uppercase tracking-widest mb-2 md:mb-4">
                   UI UX Designer
                 </h3>
-                <p className="font-roboto text-[16px] font-semibold text-black uppercase tracking-widest">
+                <p className="font-roboto text-[14px] sm:text-[16px] font-semibold text-black uppercase tracking-widest">
                   Start Tech Software Solutions <span className="font-normal text-[#6F6F6F]">- Chennai, TN, India</span>
                 </p>
               </div>
-              <div className="mt-4 md:mt-0 bg-[#DDDDDD] px-2.5 py-1.5 font-plus-jakarta text-[14px] font-semibold text-black uppercase tracking-widest">
+              <div className="mt-2 md:mt-0 bg-[#DDDDDD] px-2.5 py-1.5 font-plus-jakarta text-[12px] sm:text-[14px] font-semibold text-black uppercase tracking-widest w-fit">
                 Mar 2024 - Current
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-start justify-between">
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-2 md:gap-4">
               <div>
-                <h3 className="font-syne text-[24px] font-bold text-black uppercase tracking-widest mb-4">
+                <h3 className="font-syne text-[18px] sm:text-[22px] md:text-[24px] font-bold text-black uppercase tracking-widest mb-2 md:mb-4">
                   UI UX Designer
                 </h3>
-                <p className="font-roboto text-[16px] font-semibold text-black uppercase tracking-widest">
+                <p className="font-roboto text-[14px] sm:text-[16px] font-semibold text-black uppercase tracking-widest">
                   Plenome Technologies <span className="font-normal text-[#6F6F6F]">- Chennai, TN, India</span>
                 </p>
               </div>
-              <div className="mt-4 md:mt-0 bg-[#DDDDDD] px-2.5 py-1.5 font-plus-jakarta text-[14px] font-semibold text-black uppercase tracking-widest">
+              <div className="mt-2 md:mt-0 bg-[#DDDDDD] px-2.5 py-1.5 font-plus-jakarta text-[12px] sm:text-[14px] font-semibold text-black uppercase tracking-widest w-fit">
                 Jan 2024 - Mar 2024
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-start justify-between">
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-2 md:gap-4">
               <div>
-                <h3 className="font-syne text-[24px] font-bold text-black uppercase tracking-widest mb-2">
+                <h3 className="font-syne text-[18px] sm:text-[22px] md:text-[24px] font-bold text-black uppercase tracking-widest mb-2">
                   Design Intern
                 </h3>
-                <p className="font-roboto text-[16px] font-semibold text-black uppercase tracking-widest">
+                <p className="font-roboto text-[14px] sm:text-[16px] font-semibold text-black uppercase tracking-widest">
                   Wiz Freights <span className="font-normal text-[#6F6F6F]">- Chennai, TN, India</span>
                 </p>
               </div>
-              <div className="mt-4 md:mt-0 bg-[#DDDDDD] px-2.5 py-1.5 font-plus-jakarta text-[14px] font-semibold text-black uppercase tracking-widest">
+              <div className="mt-2 md:mt-0 bg-[#DDDDDD] px-2.5 py-1.5 font-plus-jakarta text-[12px] sm:text-[14px] font-semibold text-black uppercase tracking-widest w-fit">
                 Sept 2023 - Nov 2023
               </div>
             </div>
@@ -179,31 +179,31 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-15">
-            <div className="flex flex-col md:flex-row md:items-start justify-between">
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-2 md:gap-4">
               <div>
-                <h3 className="font-syne text-[24px] font-bold text-black uppercase tracking-widest mb-4">
+                <h3 className="font-syne text-[18px] sm:text-[22px] md:text-[24px] font-bold text-black uppercase tracking-widest mb-4">
                   PG Diploma in UI Design and Development
                 </h3>
-                <p className="font-roboto text-[16px] font-semibold text-black uppercase tracking-widest">
+                <p className="font-roboto text-[14px] sm:text-[16px] font-semibold text-black uppercase tracking-widest">
                   ICAT Design Media College <span className="font-normal text-[#6F6F6F]">- Chennai, TN, India</span>
                 </p>
               </div>
-              <div className="mt-4 md:mt-0 bg-[#DDDDDD] px-2.5 py-1.5 font-plus-jakarta text-[14px] font-semibold text-black uppercase tracking-widest">
+              <div className="mt-2 md:mt-0 bg-[#DDDDDD] px-2.5 py-1.5 font-plus-jakarta text-[12px] sm:text-[14px] font-semibold text-black uppercase tracking-widest w-fit">
                 2022 - 2023
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-start justify-between">
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-2 md:gap-4">
               <div>
-                <h3 className="font-syne text-[24px] font-bold text-black uppercase tracking-widest mb-4">
+                <h3 className="font-syne text-[18px] sm:text-[22px] md:text-[24px] font-bold text-black uppercase tracking-widest mb-4">
                   BCA in Multimedia and Animation
                 </h3>
-                <p className="font-roboto text-[16px] font-semibold text-black uppercase tracking-widest">
+                <p className="font-roboto text-[14px] sm:text-[16px] font-semibold text-black uppercase tracking-widest">
                   Hindustan Institute of Technology and Science{" "}
                   <span className="font-normal text-[#6F6F6F]">- Chennai, India (2 Months)</span>
                 </p>
               </div>
-              <div className="mt-4 md:mt-0 bg-[#DDDDDD] px-2.5 py-1.5 font-plus-jakarta text-[14px] font-semibold text-black uppercase tracking-widest">
+              <div className="mt-2 md:mt-0 bg-[#DDDDDD] px-2.5 py-1.5 font-plus-jakarta text-[12px] sm:text-[14px] font-semibold text-black uppercase tracking-widest w-fit">
                 2019 - 2022
               </div>
             </div>
@@ -273,88 +273,88 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* FAQ 1 */}
-            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-6 flex items-center gap-4">
-              <div className="text-[#E34330] mt-1">
-                <QuestionIcon size={24} />
+            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-5 sm:p-6 flex items-start gap-4">
+              <div className="text-[#E34330] mt-1 flex-shrink-0">
+                <QuestionIcon size={20} />
               </div>
               <div>
-                <h4 className="font-plus-jakarta text-[20px] font-medium text-black mb-3">
+                <h4 className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-medium text-black mb-2">
                   Are you willing to relocate?
                 </h4>
-                <p className="font-plus-jakarta font-medium text-[20px] text-[#6F6F6F]">
+                <p className="font-plus-jakarta font-medium text-[15px] sm:text-[17px] md:text-[20px] text-[#6F6F6F] leading-relaxed">
                   Yes, I'm open to relocation for the right opportunity.
                 </p>
               </div>
             </div>
 
             {/* FAQ 2 */}
-            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-6 flex items-center gap-4">
-              <div className="text-[#E34330] mt-1">
-                <QuestionIcon size={24} />
+            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-5 sm:p-6 flex items-start gap-4">
+              <div className="text-[#E34330] mt-1 flex-shrink-0">
+                <QuestionIcon size={20} />
               </div>
               <div>
-                <h4 className="font-plus-jakarta text-[20px] font-medium text-black mb-3">
+                <h4 className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-medium text-black mb-2">
                   What is your total experience?
                 </h4>
-                <p className="font-plus-jakarta font-medium text-[20px] text-[#6F6F6F]">2 Years and 3 Months</p>
+                <p className="font-plus-jakarta font-medium text-[15px] sm:text-[17px] md:text-[20px] text-[#6F6F6F] leading-relaxed">2 Years and 3 Months</p>
               </div>
             </div>
 
             {/* FAQ 3 */}
-            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-6 flex items-center gap-4">
-              <div className="text-[#E34330] mt-1">
-                <QuestionIcon size={24} />
+            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-5 sm:p-6 flex items-start gap-4">
+              <div className="text-[#E34330] mt-1 flex-shrink-0">
+                <QuestionIcon size={20} />
               </div>
               <div>
-                <h4 className="font-plus-jakarta text-[20px] font-medium text-black mb-3">
+                <h4 className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-medium text-black mb-2">
                   Are you open to remote, hybrid, or on-site roles?
                 </h4>
-                <p className="font-plus-jakarta font-medium text-[20px] text-[#6F6F6F]">
+                <p className="font-plus-jakarta font-medium text-[15px] sm:text-[17px] md:text-[20px] text-[#6F6F6F] leading-relaxed">
                   I'm open to hybrid and on-site roles only.
                 </p>
               </div>
             </div>
 
             {/* FAQ 4 */}
-            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-6 flex items-center gap-4">
-              <div className="text-[#E34330] mt-1">
-                <QuestionIcon size={24} />
+            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-5 sm:p-6 flex items-start gap-4">
+              <div className="text-[#E34330] mt-1 flex-shrink-0">
+                <QuestionIcon size={20} />
               </div>
               <div>
-                <h4 className="font-plus-jakarta text-[20px] font-medium text-black mb-3">
+                <h4 className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-medium text-black mb-2">
                   What kind of role are you looking for?
                 </h4>
-                <p className="font-plus-jakarta font-medium text-[20px] text-[#6F6F6F]">
+                <p className="font-plus-jakarta font-medium text-[15px] sm:text-[17px] md:text-[20px] text-[#6F6F6F] leading-relaxed">
                   I'm seeking a UI/UX or Product Designer role
                 </p>
               </div>
             </div>
 
             {/* FAQ 5 */}
-            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-6 flex items-center gap-4">
-              <div className="text-[#E34330] mt-1">
-                <QuestionIcon size={24} />
+            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-5 sm:p-6 flex items-start gap-4">
+              <div className="text-[#E34330] mt-1 flex-shrink-0">
+                <QuestionIcon size={20} />
               </div>
               <div>
-                <h4 className="font-plus-jakarta text-[20px] font-medium text-black mb-3">
+                <h4 className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-medium text-black mb-2">
                   Can you do graphic design?
                 </h4>
-                <p className="font-plus-jakarta font-medium text-[20px] text-[#6F6F6F]">
+                <p className="font-plus-jakarta font-medium text-[15px] sm:text-[17px] md:text-[20px] text-[#6F6F6F] leading-relaxed">
                   Yes, Although I specialize in UI/UX design, I can create simple posters, logos, ID cards.
                 </p>
               </div>
             </div>
 
             {/* FAQ 6 */}
-            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-6 flex items-center gap-4">
-              <div className="text-[#E34330] mt-1">
-                <QuestionIcon size={24} />
+            <div className="border border-[#D8D8D8] bg-[#FCFCFC] p-5 sm:p-6 flex items-start gap-4">
+              <div className="text-[#E34330] mt-1 flex-shrink-0">
+                <QuestionIcon size={20} />
               </div>
               <div>
-                <h4 className="font-plus-jakarta text-[20px] font-medium text-black mb-3">
+                <h4 className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-medium text-black mb-2">
                   Do you know video editing?
                 </h4>
-                <p className="font-plus-jakarta font-medium text-[20px] text-[#6F6F6F]">
+                <p className="font-plus-jakarta font-medium text-[15px] sm:text-[17px] md:text-[20px] text-[#6F6F6F] leading-relaxed">
                   Yes. I can edit simple videos with transitions, text, subtitles, and basic animations.
                 </p>
               </div>
