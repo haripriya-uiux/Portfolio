@@ -7,82 +7,42 @@ export default function Projects() {
   const projects = [
     {
       id: "01",
-      title: "TRANSTAN",
-      category: "WEB APPLICATION",
-      subtitle: "Organ Transplant Management System",
-      tag: "RE-DESIGN",
-      image: "/placeholder-1.png", // Will be replaced by actual image
-    },
-    {
-      id: "02",
-      title: "HEALTHCARE",
-      category: "MOBILE APPLICATION",
-      subtitle: "Hospital Information Management System",
-      tag: "CASE STUDY",
-      image: "/placeholder-2.png",
-    },
-    {
-      id: "03",
-      title: "FIN TECH",
-      category: "POC DEVICE", // The screenshot had POC DEVICE on the third card and BRANDING on fourth, wait, the screenshot has 4 projects shown, maybe 2 per row. I will define 4.
-      subtitle: "Landing Page",
-      tag: "CASE STUDY",
-      image: "/placeholder-3.png",
-    },
-    {
-      id: "04",
-      title: "FIN TECH",
-      category: "BRANDING", // Third and Fourth cards in screenshot 2 both say FIN TECH
-      subtitle: "Schedule Management",
-      tag: "CASE STUDY",
-      image: "/placeholder-4.png",
-    },
-  ];
-
-  // Based on screenshot 1: First card is TRANSTAN (WEB APP), second is HEALTHCARE (MOBILE APP)
-  // Based on screenshot 1 bottom: Third card has label POC DEVICE, Fourth has label MOBILE APPLICATION (Wait, in screenshot 1 it says POC DEVICE and MOBILE APPLICATION)
-  // Based on screenshot 2: Third card (id 01) FIN TECH, Fourth card (id 01) FIN TECH, both have BRANDING label.
-  // I will use 4 projects: TRANSTAN, HEALTHCARE, FIN TECH 1, FIN TECH 2 to match exactly.
-
-  const exactProjects = [
-    {
-      id: "01",
       slug: "transtan",
       title: "TRANSTAN",
       category: "WEB APPLICATION",
       subtitle: "Organ Transplant Management System",
-      tag: "RE-DESIGN",
-      image: "/transtan_project.png",
+      tag: "Healthcare",
+      image: "/transtan_project.webp",
       hasImage: true,
     },
     {
       id: "02",
-      slug: "healthcare-case-study",
-      title: "HEALTHCARE",
-      category: "MOBILE APPLICATION",
-      subtitle: "Hospital Information Management System",
-      tag: "CASE STUDY",
-      image: "/healthcare_project.png",
-      hasImage: true,
-    },
-    {
-      id: "01",
-      slug: "fintech-poc",
-      title: "FIN TECH",
+      slug: "ophub",
+      title: "OP HUB",
       category: "POC DEVICE",
-      subtitle: "Landing Page",
-      tag: "CASE STUDY",
-      image: "/fintech_poc_project.png",
+      subtitle: "Out Patient Appointment Management Device",
+      tag: "Healthcare",
+      image: "/ophub_project.webp",
       hasImage: true,
     },
     {
-      id: "01",
-      slug: "fintech-branding",
-      title: "FIN TECH",
-      category: "BRANDING",
-      subtitle: "Schedule Management",
-      tag: "CASE STUDY",
-      image: "/fintech_branding_project.png",
+      id: "03",
+      slug: "hims",
+      title: "HIMS",
+      category: "WEB APPLICATION",
+      subtitle: "Hospital Information Management System",
+      tag: "Healthcare",
+      image: "/hims_project.webp",
+      hasImage: true,
+    },
+    {
+      id: "04",
+      slug: "docride",
+      title: "DOC RIDE",
+      category: "MOBILE APPLICATION",
+      subtitle: "Doctor Mobility System",
+      tag: "Healthcare",
+      image: "/docride_project.webp",
       hasImage: true,
     },
   ];
@@ -107,7 +67,7 @@ export default function Projects() {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
-          {exactProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <div key={index} className="flex flex-col group cursor-pointer">
               {/* Image Container */}
               <div className="relative aspect-[4/3] w-full bg-[#D3DEE0] mb-6 overflow-hidden flex items-center justify-center group/img">

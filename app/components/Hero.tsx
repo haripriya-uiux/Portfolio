@@ -60,7 +60,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
       </div>
 
       {/* Scroll Indicator */}
