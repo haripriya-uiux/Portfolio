@@ -159,7 +159,7 @@ export default function DownloadResumeButton({ variant = "hero", className, chil
           >
             <polyline className="dl-check" points="2,8 6,12 13,4" />
           </svg>
-          Saved!
+          Downloaded!
         </span>
       ) : downloading ? (
         /* Arrow-down pulse while in progress */
@@ -182,7 +182,7 @@ export default function DownloadResumeButton({ variant = "hero", className, chil
         </span>
       ) : (
         /* Default label */
-        <span className="pointer-events-none">
+        <span className="pointer-events-none inline-flex items-center gap-2">
           {children || (variant === "hero" ? "download resume" : "Download Full Resume")}
         </span>
       )}

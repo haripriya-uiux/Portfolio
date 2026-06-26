@@ -86,7 +86,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-12 md:py-20 lg:py-30 bg-[#FAFAFA] border-t border-[#E5E5E5]">
+    <section id="contact" className="pt-12 pb-12 md:pb-30 md:pt-16 lg:pt-20 bg-[#FAFAFA] border-t border-[#E5E5E5]">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section Header */}
         <div className="flex flex-col space-y-2 border-b border-[#D8D8D8] pb-6 mb-10">
@@ -105,8 +105,8 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
           {/* Left Side: Contact Info Blocks */}
           <div className="flex flex-col space-y-6">
-            <div className="border border-[#D8D8D8] bg-transparent p-6 flex items-start gap-4">
-              <div className="mt-1">
+            <div className="border border-[#D8D8D8] bg-transparent p-6 flex items-center gap-4">
+              <div className="flex-shrink-0">
                 <svg
                   width="20"
                   height="20"
@@ -130,8 +130,8 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="border border-[#D8D8D8] bg-transparent p-6 flex items-start gap-4">
-              <div className="mt-1">
+            <div className="border border-[#D8D8D8] bg-transparent p-6 flex items-center gap-4">
+              <div className="flex-shrink-0">
                 <svg
                   width="20"
                   height="20"
@@ -160,8 +160,8 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="border border-[#D8D8D8] bg-transparent p-6 flex items-start gap-4">
-              <div className="mt-1">
+            <div className="border border-[#D8D8D8] bg-transparent p-6 flex items-center gap-4">
+              <div className="flex-shrink-0">
                 <svg
                   width="20"
                   height="20"

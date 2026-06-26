@@ -18,7 +18,7 @@ export default function Collaborate() {
               TOGETHER.
             </h2>
             <p className="font-roboto text-[16px] sm:text-[18px] md:text-[20px] font-medium text-[#6F6F6F] leading-relaxed max-w-[540px] pt-5">
-              Have an exciting idea, a contract role, or a product in need of structural refinement? Drop me a line and
+              Have an exciting idea/product in need of structural refinement? Drop me a line and
               let's bring it to life.
             </p>
           </div>

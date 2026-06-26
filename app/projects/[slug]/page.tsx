@@ -231,38 +231,34 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
         </p>
 
         {/* ── Info Grid ── */}
-        <div
-          className={`grid gap-x-4 gap-y-5 pt-5 md:pt-8 border-t border-[#E5E5E5] ${
-            hasExtendedInfo ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-2 sm:grid-cols-3"
-          }`}
-        >
-          <div>
+        <div className="flex flex-wrap justify-between gap-y-5 pt-5 md:pt-8 border-t border-[#E5E5E5]">
+          <div className="text-left">
             <p className={infoLabel}>My Role</p>
             <p className={infoValue}>{project.role}</p>
           </div>
 
           {project.primaryUsers && (
-            <div>
+            <div className="text-left">
               <p className={infoLabel}>Primary Users</p>
               <p className={infoValue}>{project.primaryUsers}</p>
             </div>
           )}
 
           {project.industry && (
-            <div>
+            <div className="text-left">
               <p className={infoLabel}>Industry</p>
               <p className={infoValue}>{project.industry}</p>
             </div>
           )}
 
-          {project.duration && !hasExtendedInfo && (
-            <div>
-              <p className={infoLabel}>Duration On</p>
+          {project.duration && (
+            <div className="text-left">
+              <p className={infoLabel}>Duration</p>
               <p className={infoValue}>{project.duration}</p>
             </div>
           )}
 
-          <div>
+          <div className="text-right">
             <p className={infoLabel}>Platform</p>
             <p className={infoValue}>{project.platform}</p>
           </div>

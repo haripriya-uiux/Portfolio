@@ -5,7 +5,7 @@ import DownloadResumeButton from "./DownloadResumeButton";
 
 export default function Hero() {
   return (
-    <section id="about" className="relative flex flex-col justify-center py-15 lg:py-20 bg-[#FAFAFA]">
+    <section id="about" className="relative flex flex-col justify-center py-8 lg:py-12 bg-[#FAFAFA]">
       <div className="mx-auto max-w-7xl px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         {/* Left Column: Hero Content */}
@@ -14,19 +14,19 @@ export default function Hero() {
             ui/ux designer & product thinker
           </div>
           
-          <h1 className="font-syne text-[38px] sm:text-[54px] md:text-[66px] font-[800] leading-[1.1] md:leading-none tracking-normal text-black mt-4">
+          <h1 className="font-syne text-[34px] sm:text-[46px] md:text-[56px] font-[800] leading-[1.1] md:leading-none tracking-normal text-black mt-3">
             I design<br />
-            <span className="font-playfair font-[500] italic text-[38px] sm:text-[54px] md:text-[66px] leading-[1.1] md:leading-none tracking-normal text-[#E34330]">digital</span><br />
+            <span className="font-playfair font-[500] italic text-[34px] sm:text-[46px] md:text-[56px] leading-[1.1] md:leading-none tracking-normal text-[#E34330]">digital</span><br />
             experiences<br />
             that<br />
             connect.
           </h1>
 
-          <p className="font-plus-jakarta text-[16px] sm:text-[18px] md:text-[20px] font-[400] text-[#8C8C8C] max-w-[500px] mt-6 sm:mt-8.5">
+          <p className="font-plus-jakarta text-[14px] sm:text-[16px] md:text-[17px] font-[400] text-[#8C8C8C] max-w-[500px] mt-4 sm:mt-6">
             UI/UX Designer with 2+ Years of industry experience. <br/> Designing seamless digital experiences with a user-first mindset.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 xs:gap-6 mt-8.5 w-full xs:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 xs:gap-6 mt-6 w-full xs:w-auto">
             <Link
               href="/#projects"
               className="font-plus-jakarta font-[600] text-[14px] tracking-[0.05em] uppercase flex items-center justify-center w-full xs:w-[220px] h-[54px] bg-black text-white border-[1.5px] border-black hover:bg-neutral-800 transition-colors"
@@ -39,7 +39,7 @@ export default function Hero() {
 
         {/* Right Column: Hero Profile Image Frame */}
         <div className="lg:col-span-5 flex justify-center lg:justify-end h-full items-center">
-          <div className="relative border-[6px] border-[#222222] overflow-hidden w-[90%] md:w-[80%] lg:w-full max-w-[420px] aspect-[4/5] bg-neutral-100 flex flex-col justify-end shadow-sm">
+          <div className="relative border-[6px] border-[#222222] overflow-hidden w-[90%] md:w-[80%] lg:w-full max-w-[360px] aspect-[4/5] bg-neutral-100 flex flex-col justify-end shadow-sm">
             {/* Profile Image */}
             <Image
               src="/hero_img.webp"
@@ -63,7 +63,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center font-roboto text-[10px] font-bold text-[#B8B4B4] uppercase tracking-widest">
+      <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center font-roboto text-[10px] font-bold text-[#B8B4B4] uppercase tracking-widest">
         <Link href="/#projects" className="flex flex-col items-center hover:text-black transition-colors cursor-pointer pb-2">
           <span className="mb-1">scroll</span>
           <span className="text-[12px] font-sans">↓</span>
