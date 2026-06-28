@@ -29,3 +29,58 @@ body {
   font-family: var(--font-plus-jakarta-sans), sans-serif;
   overflow-x: hidden;
 }
+
+/* ── DocRide Hero: Smoke / Mist Blobs ────────────────────────────── */
+@keyframes smoke-rise-a {
+  0%   { transform: translateY(60px) translateX(-10px) scale(0.7); opacity: 0; }
+  30%  { opacity: 0.55; }
+  70%  { opacity: 0.4; }
+  100% { transform: translateY(-120px) translateX(20px) scale(1.35); opacity: 0; }
+}
+
+@keyframes smoke-rise-b {
+  0%   { transform: translateY(40px) translateX(15px) scale(0.6); opacity: 0; }
+  25%  { opacity: 0.5; }
+  75%  { opacity: 0.3; }
+  100% { transform: translateY(-140px) translateX(-25px) scale(1.5); opacity: 0; }
+}
+
+@keyframes smoke-rise-c {
+  0%   { transform: translateY(70px) translateX(5px) scale(0.55); opacity: 0; }
+  20%  { opacity: 0.45; }
+  80%  { opacity: 0.25; }
+  100% { transform: translateY(-100px) translateX(-10px) scale(1.2); opacity: 0; }
+}
+
+@keyframes smoke-drift {
+  0%, 100% { transform: translateX(0px) scaleX(1); }
+  33%       { transform: translateX(12px) scaleX(1.08); }
+  66%       { transform: translateX(-8px) scaleX(0.95); }
+}
+
+.smoke-blob-a { animation: smoke-rise-a 4.2s ease-in-out infinite; }
+.smoke-blob-b { animation: smoke-rise-b 5.1s ease-in-out 0.7s infinite; }
+.smoke-blob-c { animation: smoke-rise-c 4.7s ease-in-out 1.4s infinite; }
+.smoke-blob-d { animation: smoke-rise-a 5.5s ease-in-out 0.4s infinite; }
+.smoke-blob-e { animation: smoke-rise-b 4.9s ease-in-out 1.9s infinite; }
+
+/* ── DocRide: scroll-reveal utility ─────────────────────────────── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── DocRide: Design Process line grow ──────────────────────────── */
+@keyframes line-grow {
+  from { height: 0; }
+  to   { height: 100%; }
+}
+
+.docride-line-grow {
+  animation: line-grow 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── DocRide: phone 3D perspective wrapper ──────────────────────── */
+.docride-perspective {
+  perspective: 1200px;
+}

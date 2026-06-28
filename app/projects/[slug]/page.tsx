@@ -3,6 +3,8 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Image from "next/image";
 import { Metadata } from "next";
+import { SHOW_CUSTOM_PROJECT_PAGES } from "../../lib/config";
+import DocRideProjectPage from "../docride/DocRideProjectPage";
 
 interface DesignStep {
   id: string;
@@ -201,6 +203,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ProjectDetail({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+
+  /* ── Custom animated showcase pages (demo mode) ─────────────── */
+  if (SHOW_CUSTOM_PROJECT_PAGES && slug === "docride") {
+    return <DocRideProjectPage />;
+  }
+
   const project = projectsMap[slug] || projectsMap["transtan"];
 
   const hasExtendedInfo = !!(project.primaryUsers || project.industry);
